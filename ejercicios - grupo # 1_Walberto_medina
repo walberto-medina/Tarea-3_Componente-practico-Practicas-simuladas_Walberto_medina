@@ -1,0 +1,58 @@
+
+# Solicitar las 5 notas
+notas = []
+for i in range(5):
+    nota = float(input(f"Ingrese la nota {i+1}: "))
+    notas.append(nota)
+
+# Calcular el promedio
+promedio = sum(notas) / 5
+
+# Determinar si el curso está aprobado
+if promedio >= 3:
+    print(f"Promedio: {promedio:.2f}. Curso aprobado")
+else:
+    print(f"Promedio: {promedio:.2f}. Curso no aprobado")
+
+
+# Solicitar la altura
+altura = float(input("Ingrese su altura en metros: "))
+
+# Validar la altura
+if altura >= 1.20:
+    print("Puede ingresar a la atracción")
+else:
+    print("No puede ingresar a la atracción")
+
+
+# Solicitar la edad
+edad = int(input("Ingrese su edad: "))
+
+# Determinar el grupo generacional
+if edad <= 12:
+    grupo = "Niño"
+elif 13 <= edad <= 17:
+    grupo = "Adolescente"
+elif 18 <= edad <= 34:
+    grupo = "Joven"
+elif 35 <= edad <= 63:
+    grupo = "Adulto"
+else:
+    grupo = "Adulto mayor"
+
+print(f"Su grupo generacional es: {grupo}")
+
+
+# Solicitar el ingreso
+ingreso = float(input("Ingrese su ingreso mensual en salarios mínimos: "))
+
+# Determinar la cuota moderadora
+if ingreso < 2:
+    cuota = 4000
+elif ingreso <= 5:
+    cuota = 15000
+else:
+    cuota = 40000
+
+print(f"El valor de la cuota moderadora es: {cuota}")
+
